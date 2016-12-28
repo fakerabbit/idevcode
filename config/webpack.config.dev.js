@@ -164,9 +164,12 @@ module.exports = {
       {
         test: /\.scss$/,
         include: paths.appSrc,
-        loaders: ["style", "css", "sass"]
+        loaders: ["style", "css", "sass"],
       },
-    ]
+    ],
+  },
+  sassLoader: {
+    includePaths: [paths.bourbon, paths.bourbonNeat, paths.appSrc]
   },
   
   // We use PostCSS for autoprefixing only.

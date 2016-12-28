@@ -171,6 +171,9 @@ module.exports = {
       },
     ]
   },
+  sassLoader: {
+    includePaths: [paths.bourbon, paths.bourbonNeat, paths.appSrc]
+  },
   
   // We use PostCSS for autoprefixing only.
   postcss: function() {
