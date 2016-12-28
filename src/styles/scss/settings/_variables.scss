@@ -1,0 +1,32 @@
+@import 'bourbon';
+
+// Grid columns
+
+$grid-columns: 12;
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+
+// Import sequence is important
+// https://github.com/thoughtbot/neat#using-neat
+
+@import 'neat';
+@import "neat-helpers";
+
+// Grid breakpoints
+
+$max-width: 2000px;
+
+$first-breakpoint-value: 570px;
+$second-breakpoint-value: 835px;
+$third-breakpoint-value: 1100px;
+
+// Covers 0-399px wide screen size. 2 column grid
+$small-screen: new-breakpoint(max-width $first-breakpoint-value 2);
+// Covers 400-835px wide screen size. 4 column grid
+$medium-screen: new-breakpoint(min-width $first-breakpoint-value max-width $second-breakpoint-value 4);
+// Covers 836-1099px wide screen size. 8 column grid
+$large-screen: new-breakpoint(min-width $second-breakpoint-value max-width $third-breakpoint-value 8);
+// Covers 1100px and up wide screen size. 12 column grid (default grid size)
+$xl-screen: new-breakpoint(min-width $third-breakpoint-value);

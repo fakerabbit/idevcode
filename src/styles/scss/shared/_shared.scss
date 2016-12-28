@@ -1,0 +1,19 @@
+@import "../settings/variables";
+
+$fixed-el-width: 300px;
+
+@include media($small-screen) {
+  $grid-columns: 2;
+}
+
+@include media($medium-screen) {
+  $grid-columns: 4;
+}
+
+@include media($large-screen) {
+  $grid-columns: 8;
+}
+
+@include media($xl-screen) {
+  $grid-columns: 12;
+}
