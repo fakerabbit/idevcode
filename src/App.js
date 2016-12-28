@@ -9,6 +9,9 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
+        <div className="App-footer">
+          © 2016 iDevCode
+        </div>
       </div>
     );
   }

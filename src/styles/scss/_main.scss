@@ -21,6 +21,13 @@
   font-size: large;
 }
 
+.App-footer {
+  background-color: #353d40;
+  height: 120px;
+  color: white;
+  padding-top: 60px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -36,20 +43,24 @@
 
 @include media($small-screen) {
   .App-header { @include span-columns(2); }
+  .App-footer { @include span-columns(2); }
   .App-logo { width: 250px; }
 }
 
 @include media($medium-screen) {
   .App-header { @include span-columns(4); }
+  .App-footer { @include span-columns(4); }
   .App-logo { width: 400px; }
 }
 
 @include media($large-screen) {
   .App-header { @include span-columns(8); }
+  .App-footer { @include span-columns(8); }
   .App-logo { width: 600px; }
 }
 
 @include media($xl-screen) {
   .App-header { @include span-columns(12); }
+  .App-footer { @include span-columns(12); }
   .App-logo { width: 800px; }
 }
