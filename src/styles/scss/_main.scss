@@ -8,12 +8,13 @@
 
 .App-logo {
   animation: Logo-bounce infinite 5s linear;
+  padding-top: 120px;
 }
 
 .App-header {
+  @include fill-parent();
   background-color: #ffe93d;
   height: 600px;
-  padding-top: 250px;
   color: #ed145b;
 }
 
@@ -42,25 +43,25 @@
 
 
 @include media($small-screen) {
-  .App-header { @include span-columns(2); }
+  .App-logo { @include span-columns(2); @include shift(0.3); }
   .App-footer { @include span-columns(2); }
   .App-logo { width: 250px; }
 }
 
 @include media($medium-screen) {
-  .App-header { @include span-columns(4); }
+  .App-logo { @include span-columns(4); @include shift(1); }
   .App-footer { @include span-columns(4); }
   .App-logo { width: 400px; }
 }
 
 @include media($large-screen) {
-  .App-header { @include span-columns(8); }
+  .App-logo { @include span-columns(8); @include shift(1.5); }
   .App-footer { @include span-columns(8); }
   .App-logo { width: 600px; }
 }
 
 @include media($xl-screen) {
-  .App-header { @include span-columns(12); }
+  .App-logo { @include span-columns(12); @include shift(2); }
   .App-footer { @include span-columns(12); }
   .App-logo { width: 800px; }
 }

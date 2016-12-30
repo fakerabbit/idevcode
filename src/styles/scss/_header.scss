@@ -1,0 +1,33 @@
+@import "settings/variables";
+@import "shared/shared";
+
+.header {
+  @include fill-parent();
+  background-color: #353d40;
+  height: 100px;
+  color: white;
+}
+
+.header-logo {
+  margin-top: 30px;
+}
+
+.header-right {
+
+}
+
+@include media($small-screen) {
+  .header-logo { @include span-columns(1); }
+}
+
+@include media($medium-screen) {
+  .header-logo { @include span-columns(1.5); }
+}
+
+@include media($large-screen) {
+  .header-logo { @include span-columns(1.8); }
+}
+
+@include media($xl-screen) {
+  .header-logo { @include span-columns(2); }
+}
