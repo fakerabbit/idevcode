@@ -1,0 +1,33 @@
+@import "settings/variables";
+@import "shared/shared";
+
+.hero {
+  @include fill-parent();
+  height: 700px;
+  background: url(../assets/images/hero.jpg) no-repeat center center; background-size: cover;
+}
+
+@include media($small-screen) {
+  .hero { height: 500px; }
+  .hero-logo { @include span-columns(1.5); @include shift(0.2);
+    margin-top: 150px;
+  }
+}
+
+@include media($medium-screen) {
+  .hero-logo { @include span-columns(3.5); @include shift(0.2);
+    margin-top: 200px;
+  }
+}
+
+@include media($large-screen) {
+  .hero-logo { @include span-columns(6); @include shift(1);
+    margin-top: 200px;
+  }
+}
+
+@include media($xl-screen) {
+  .hero-logo { @include span-columns(10); @include shift(1);
+    margin-top: 100px;
+  }
+}

@@ -46,6 +46,7 @@
   .App-logo { @include span-columns(2); @include shift(0.3); }
   .App-footer { @include span-columns(2); }
   .App-logo { width: 250px; }
+  .App-header { height: 500px; }
 }
 
 @include media($medium-screen) {
