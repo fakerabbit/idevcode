@@ -4,10 +4,10 @@ import Header from './Header';
 
 import logo from '../assets/images/heroLogo.png';
 
-const Hero = () => {
+const Hero = ({links}) => {
   return (
     <div className="hero">
-      <Header/>
+      <Header links={links}/>
       <div className="hero-main">
         <img src={logo} className="hero-logo" alt="logo" />
       </div>

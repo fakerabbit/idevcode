@@ -17,18 +17,32 @@
 
 }
 
+.header-right ul li {
+  list-style-type: none;
+  float: right;
+  padding-left: 40px;
+}
+
 @include media($small-screen) {
   .header-logo { @include span-columns(1); }
+  .header-right { visibility: hidden; @include span-columns(1); }
 }
 
 @include media($medium-screen) {
   .header-logo { @include span-columns(1.5); }
+  .header-right { @include span-columns(2.2); @include shift(0); }
 }
 
 @include media($large-screen) {
   .header-logo { @include span-columns(1.8); }
+  .header-right { @include span-columns(5); @include shift(0.5);
+    margin-top: 10px;
+  }
 }
 
 @include media($xl-screen) {
   .header-logo { @include span-columns(2); }
+  .header-right { @include span-columns(5); @include shift(4);
+    margin-top: 20px;
+  }
 }
