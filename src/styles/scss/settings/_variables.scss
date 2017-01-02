@@ -30,3 +30,17 @@ $medium-screen: new-breakpoint(min-width $first-breakpoint-value max-width $seco
 $large-screen: new-breakpoint(min-width $second-breakpoint-value max-width $third-breakpoint-value 8);
 // Covers 1100px and up wide screen size. 12 column grid (default grid size)
 $xl-screen: new-breakpoint(min-width $third-breakpoint-value);
+
+// Typography
+$font-family-heading: Anemone,serif !default;
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 4px;
+  white-space: nowrap;
+}
+
+a:hover, a:focus {
+  color: #ed145b;
+}

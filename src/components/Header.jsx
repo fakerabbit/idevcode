@@ -10,7 +10,7 @@ const Header = ({links}) => {
       <div className="header-right">
         <ul>
           {links.map(function(link){
-            return <li key={link.key}>{link.title}</li>;
+            return <a href={link.ref} key={link.key}><li>{link.title}</li></a>;
           })}
         </ul>
       </div>

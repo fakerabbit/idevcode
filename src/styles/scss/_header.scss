@@ -14,7 +14,12 @@
 }
 
 .header-right {
+  font-family: $font-family-heading;
+  font-size: 50px;
+}
 
+.header-right ul {
+  margin-top: 10px;
 }
 
 .header-right ul li {
@@ -29,20 +34,24 @@
 }
 
 @include media($medium-screen) {
-  .header-logo { @include span-columns(1.5); }
-  .header-right { @include span-columns(2.2); @include shift(0); }
+  .header-logo { @include span-columns(0.8); }
+  .header-right { @include span-columns(2.8); @include shift(0);
+    font-size: 30px;
+  }
+  .header-right ul {
+    margin-top: 30px;
+  }
+  .header-right li {
+    padding-left: 10px;
+  }
 }
 
 @include media($large-screen) {
   .header-logo { @include span-columns(1.8); }
-  .header-right { @include span-columns(5); @include shift(0.5);
-    margin-top: 10px;
-  }
+  .header-right { @include span-columns(5); @include shift(0.5); }
 }
 
 @include media($xl-screen) {
   .header-logo { @include span-columns(2); }
-  .header-right { @include span-columns(5); @include shift(4);
-    margin-top: 20px;
-  }
+  .header-right { @include span-columns(6); @include shift(3); }
 }
