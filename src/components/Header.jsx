@@ -5,7 +5,7 @@ const Header = ({links}) => {
   return (
     <header className="header">
       <div className="header-logo">
-        <a href="/"><img src={logo} alt="logo" width='180' height='30' /></a>
+        <a href="/"><img src={logo} alt="logo" width='138' height='40' /></a>
       </div>
       <div className="header-right">
         <ul>
