@@ -34,8 +34,8 @@
 }
 
 @include media($medium-screen) {
-  .header-logo { @include span-columns(0.8); }
-  .header-right { @include span-columns(2.8); @include shift(0);
+  .header-logo { @include span-columns(1); }
+  .header-right { @include span-columns(2.75); @include span-columns(0);
     font-size: 30px;
   }
   .header-right ul {

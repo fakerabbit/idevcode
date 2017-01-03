@@ -9,8 +9,8 @@
 
 @include media($small-screen) {
   .hero { height: 500px; }
-  .hero-logo { @include span-columns(1.5); @include shift(0.2);
-    margin-top: 150px;
+  .hero-logo { @include span-columns(1.4); @include shift(0.4);
+    margin-top: -60px;
   }
 }
 
