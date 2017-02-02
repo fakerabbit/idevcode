@@ -1,0 +1,73 @@
+@import "settings/variables";
+@import "shared/shared";
+
+.about {
+  @include fill-parent();
+  height: 700px;
+  background: url(../assets/images/about.jpg) no-repeat center center; background-size: cover;
+}
+
+@include media($small-screen) {
+  .about { height: 500px; }
+  .about-img { @include span-columns(0.7); @include shift(0.65);
+    margin-top: 20px;
+  }
+  .about-center { @include span-columns(1.5); @include shift(0.25);
+    margin-top: 30px;
+  }
+  .about-git { @include span-columns(1.5); @include shift(0.25);
+    margin-top: 5px;
+  }
+  .about-in { @include span-columns(1.5); @include shift(0.25);
+    margin-top: 5px;
+  }
+  .about-title {display: none;}
+}
+
+@include media($medium-screen) {
+  .about-img { @include span-columns(1); @include shift(1.5);
+    margin-top: 50px;
+  }
+  .about-center { @include span-columns(3); @include shift(0.5);
+    margin-top: 30px;
+  }
+  .about-git { @include span-columns(2); @include shift(1);
+    margin-top: 50px;
+  }
+  .about-in { @include span-columns(2); @include shift(1);
+    margin-top: 45px;
+  }
+  .about-title {display: none;}
+}
+
+@include media($large-screen) {
+  .about-img { @include span-columns(2.5); @include shift(0.5);
+    margin-top: 50px;
+  }
+  .about-title { @include span-columns(4.5);
+    margin-top: 50px;
+  }
+  .about-git { @include span-columns(5); @include shift(-1);
+    margin-top: 150px;
+  }
+  .about-in { @include span-columns(5); @include shift(2);
+    margin-top: 28px;
+  }
+  .about-center { display: none; }
+}
+
+@include media($xl-screen) {
+  .about-img { @include span-columns(3); @include shift(1);
+    margin-top: 50px;
+  }
+  .about-title { @include span-columns(7);
+    margin-top: 50px;
+  }
+  .about-git { @include span-columns(6);
+    margin-top: 50px;
+  }
+  .about-in { @include span-columns(6); @include shift(4);
+    margin-top: 30px;
+  }
+  .about-center { display: none; }
+}
