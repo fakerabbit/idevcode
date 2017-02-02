@@ -1,0 +1,52 @@
+@import "settings/variables";
+@import "shared/shared";
+
+.skills {
+  @include fill-parent();
+  height: 1200px;
+}
+
+.skills-table ul { @include outer-container; }
+
+@include media($small-screen) {
+  .skills {  height: 550px;  }
+  .skills-table li { @include span-columns(0.5); @include omega(4n); @include shift(0);
+  }
+  .skills-table img { @include span-columns(2); @include shift(-0.7);
+    margin-top: 20px;
+    vertical-align: center;
+  }
+  .skills-sm { padding-top: 15px; }
+}
+
+@include media($medium-screen) {
+  .skills {  height: 850px;  }
+  .skills-table li { @include span-columns(1); @include omega(4n);
+  }
+  .skills-table img { @include span-columns(3);
+    margin-top: 20px;
+    vertical-align: center;
+  }
+  .skills-sm { padding-top: 30px; }
+}
+
+@include media($large-screen) {
+  .skills {  height: 920px;  }
+  .skills-table li { @include span-columns(1.5); @include omega(4n); @include shift(0.2);
+  }
+  .skills-table img { @include span-columns(6); @include shift(3.2);
+    margin-top: 20px;
+    vertical-align: center;
+  }
+  .skills-sm { padding-top: 30px; }
+}
+
+@include media($xl-screen) {
+  .skills-table li { @include span-columns(2); @include omega(4n); @include shift(0.5);
+  }
+  .skills-table img { @include span-columns(8); @include shift(5);
+    margin-top: 20px;
+    vertical-align: center;
+  }
+  .skills-sm { padding-top: 30px; }
+}
